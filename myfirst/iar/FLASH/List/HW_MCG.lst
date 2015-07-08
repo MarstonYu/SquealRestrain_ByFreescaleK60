@@ -1,0 +1,886 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.30.1.7746/W32 for ARM        30/May/2015  13:28:01
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\tools\IAR\lapulande\%5B拉普兰德K60固件库%5DLPLD_OSKinetis_V3.10\LPLD_OSKinetis_V3\lib\LPLD\HW\HW_MCG.c
+#    Command line =  
+#        D:\tools\IAR\lapulande\%5B拉普兰德K60固件库%5DLPLD_OSKinetis_V3.10\LPLD_OSKinetis_V3\lib\LPLD\HW\HW_MCG.c
+#        -D LPLD_K60 -D USE_K60F12 -D ARM_MATH_CM4 -lCN
+#        D:\tools\IAR\lapulande\%5B拉普兰德K60固件库%5DLPLD_OSKinetis_V3.10\LPLD_OSKinetis_V3\project\myfirst\iar\FLASH\List\
+#        -lB
+#        D:\tools\IAR\lapulande\%5B拉普兰德K60固件库%5DLPLD_OSKinetis_V3.10\LPLD_OSKinetis_V3\project\myfirst\iar\FLASH\List\
+#        -o
+#        D:\tools\IAR\lapulande\%5B拉普兰德K60固件库%5DLPLD_OSKinetis_V3.10\LPLD_OSKinetis_V3\project\myfirst\iar\FLASH\Obj\
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M4F -e --char_is_signed --fpu=VFPv4_sp --dlib_config
+#        D:\tools\IAR\iar7_3\arm\INC\c\DLib_Config_Normal.h -I
+#        D:\tools\IAR\lapulande\%5B拉普兰德K60固件库%5DLPLD_OSKinetis_V3.10\LPLD_OSKinetis_V3\project\myfirst\iar\..\app\
+#        -I
+#        D:\tools\IAR\lapulande\%5B拉普兰德K60固件库%5DLPLD_OSKinetis_V3.10\LPLD_OSKinetis_V3\project\myfirst\iar\..\..\..\lib\CPU\
+#        -I
+#        D:\tools\IAR\lapulande\%5B拉普兰德K60固件库%5DLPLD_OSKinetis_V3.10\LPLD_OSKinetis_V3\project\myfirst\iar\..\..\..\lib\common\
+#        -I
+#        D:\tools\IAR\lapulande\%5B拉普兰德K60固件库%5DLPLD_OSKinetis_V3.10\LPLD_OSKinetis_V3\project\myfirst\iar\..\..\..\lib\LPLD\
+#        -I
+#        D:\tools\IAR\lapulande\%5B拉普兰德K60固件库%5DLPLD_OSKinetis_V3.10\LPLD_OSKinetis_V3\project\myfirst\iar\..\..\..\lib\LPLD\HW\
+#        -I
+#        D:\tools\IAR\lapulande\%5B拉普兰德K60固件库%5DLPLD_OSKinetis_V3.10\LPLD_OSKinetis_V3\project\myfirst\iar\..\..\..\lib\LPLD\DEV\
+#        -I
+#        D:\tools\IAR\lapulande\%5B拉普兰德K60固件库%5DLPLD_OSKinetis_V3.10\LPLD_OSKinetis_V3\project\myfirst\iar\..\..\..\lib\LPLD\FUNC\
+#        -I
+#        D:\tools\IAR\lapulande\%5B拉普兰德K60固件库%5DLPLD_OSKinetis_V3.10\LPLD_OSKinetis_V3\project\myfirst\iar\..\..\..\lib\uCOS-II\Ports\
+#        -I
+#        D:\tools\IAR\lapulande\%5B拉普兰德K60固件库%5DLPLD_OSKinetis_V3.10\LPLD_OSKinetis_V3\project\myfirst\iar\..\..\..\lib\uCOS-II\Source\
+#        -I
+#        D:\tools\IAR\lapulande\%5B拉普兰德K60固件库%5DLPLD_OSKinetis_V3.10\LPLD_OSKinetis_V3\project\myfirst\iar\..\..\..\lib\FatFs\
+#        -I
+#        D:\tools\IAR\lapulande\%5B拉普兰德K60固件库%5DLPLD_OSKinetis_V3.10\LPLD_OSKinetis_V3\project\myfirst\iar\..\..\..\lib\FatFs\option\
+#        -I
+#        D:\tools\IAR\lapulande\%5B拉普兰德K60固件库%5DLPLD_OSKinetis_V3.10\LPLD_OSKinetis_V3\project\myfirst\iar\..\..\..\lib\USB\common\
+#        -I
+#        D:\tools\IAR\lapulande\%5B拉普兰德K60固件库%5DLPLD_OSKinetis_V3.10\LPLD_OSKinetis_V3\project\myfirst\iar\..\..\..\lib\USB\driver\
+#        -I
+#        D:\tools\IAR\lapulande\%5B拉普兰德K60固件库%5DLPLD_OSKinetis_V3.10\LPLD_OSKinetis_V3\project\myfirst\iar\..\..\..\lib\USB\descriptor\
+#        -I
+#        D:\tools\IAR\lapulande\%5B拉普兰德K60固件库%5DLPLD_OSKinetis_V3.10\LPLD_OSKinetis_V3\project\myfirst\iar\..\..\..\lib\USB\class\
+#        -I
+#        D:\tools\IAR\lapulande\%5B拉普兰德K60固件库%5DLPLD_OSKinetis_V3.10\LPLD_OSKinetis_V3\project\myfirst\iar\..\..\..\lib\dsp\
+#        -I
+#        D:\tools\IAR\lapulande\%5B拉普兰德K60固件库%5DLPLD_OSKinetis_V3.10\LPLD_OSKinetis_V3\project\myfirst\iar\..\..\..\lib\MyDrive\
+#        -On -I D:\tools\IAR\iar7_3\arm\CMSIS\Include\ -D ARM_MATH_CM4
+#    List file    =  
+#        D:\tools\IAR\lapulande\%5B拉普兰德K60固件库%5DLPLD_OSKinetis_V3.10\LPLD_OSKinetis_V3\project\myfirst\iar\FLASH\List\HW_MCG.lst
+#    Object file  =  
+#        D:\tools\IAR\lapulande\%5B拉普兰德K60固件库%5DLPLD_OSKinetis_V3.10\LPLD_OSKinetis_V3\project\myfirst\iar\FLASH\Obj\HW_MCG.o
+#
+###############################################################################
+
+D:\tools\IAR\lapulande\%5B拉普兰德K60固件库%5DLPLD_OSKinetis_V3.10\LPLD_OSKinetis_V3\lib\LPLD\HW\HW_MCG.c
+      1          /**
+      2           * @file HW_MCG.c
+      3           * @version 3.0[By LPLD]
+      4           * @date 2013-06-18
+      5           * @brief MCG底层模块相关函数
+      6           *
+      7           * 更改建议:不建议修改
+      8           *
+      9           * 版权所有:北京拉普兰德电子技术有限公司
+     10           * http://www.lpld.cn
+     11           * mail:support@lpld.cn
+     12           *
+     13           * @par
+     14           * 本代码由拉普兰德[LPLD]开发并维护，并向所有使用者开放源代码。
+     15           * 开发者可以随意修使用或改源代码。但本段及以上注释应予以保留。
+     16           * 不得更改或删除原版权所有者姓名，二次开发者可以加注二次版权所有者。
+     17           * 但应在遵守此协议的基础上，开放源代码、不得出售代码本身。
+     18           * 拉普兰德不负责由于使用本代码所带来的任何事故、法律责任或相关不良影响。
+     19           * 拉普兰德无义务解释、说明本代码的具体原理、功能、实现方法。
+     20           * 除非拉普兰德[LPLD]授权，开发者不得将本代码用于商业产品。
+     21           */
+     22          #include "common.h"
+     23          #include "HW_MCG.h"
+     24          
+     25          
+
+   \                                 In section .data, align 4
+     26          uint32 g_core_clock = -1ul;
+   \                     g_core_clock:
+   \   00000000   0xFFFFFFFF         DC32 4294967295
+
+   \                                 In section .data, align 4
+     27          uint32 g_bus_clock = -1ul;
+   \                     g_bus_clock:
+   \   00000000   0xFFFFFFFF         DC32 4294967295
+
+   \                                 In section .data, align 4
+     28          uint32 g_flash_clock = -1ul;
+   \                     g_flash_clock:
+   \   00000000   0xFFFFFFFF         DC32 4294967295
+
+   \                                 In section .data, align 4
+     29          uint32 g_flexbus_clock = -1ul;
+   \                     g_flexbus_clock:
+   \   00000000   0xFFFFFFFF         DC32 4294967295
+     30          
+     31          /*
+     32           * LPLD_PLL_Setup
+     33           * 初始化内核时钟及其他系统时钟
+     34           * 
+     35           * 参数:
+     36           *    core_clk_mhz--期望内核时钟频率
+     37           *      |__PLLx--参见HAL_MCG.h中的PLL_option定义
+     38           *
+     39           * 输出:
+     40           *    内核频率，单位MHz
+     41           */
+
+   \                                 In section .text, align 4, keep-with-next
+     42          uint8 LPLD_PLL_Setup(PllOptionEnum_Type core_clk_mhz)
+     43          {
+   \                     LPLD_PLL_Setup: (+1)
+   \   00000000   0xE92D 0x4FF8      PUSH     {R3-R11,LR}
+   \   00000004   0x4683             MOV      R11,R0
+     44            uint8 pll_freq;
+     45            uint8 prdiv, vdiv;
+     46            uint8 core_div, bus_div, flexbus_div, flash_div;
+     47          #if defined(CPU_MK60DZ10) || defined(CPU_MK60D10)
+     48          /*
+     49           *************************************************
+     50            【LPLD注解】MCG关键系数
+     51            prdiv(PLL分频系数): 0~31(1~32)
+     52            vdiv(PLL倍频系数): 0~31(24~55)
+     53            PLL参考时钟范围: 2MHz~4MHz
+     54            PLL参考时钟 = 外部参考时钟(CANNED_OSC_CLK_HZ)/prdiv
+     55            CoreClk = PLL参考时钟 x PLL倍频系数 /OUTDIV1
+     56           *************************************************
+     57           */
+     58           
+     59            // 对于MK60DZ10来说，core_clk_mhz建议不要超过100，这里限制为最高200
+     60            core_clk_mhz = (PllOptionEnum_Type)(core_clk_mhz>200u?200u:core_clk_mhz);
+     61            
+     62            // 根据期望主频选择分频和倍频系数
+     63            switch(core_clk_mhz)
+     64            {
+     65            case PLL_48:
+     66          #if OSC_CIRCUIT_TPYE == CANNED_OSC_CIRCUIT
+     67              prdiv = 24u; //50Mhz/ 25 = 2Mhz
+     68          #elif OSC_CIRCUIT_TPYE == CRYSTAL_OSC_CIRCUIT
+     69              prdiv = 3u;  //8Mhz/ 4 = 2Mhz
+     70          #endif
+     71              vdiv = 0u;  // 2Mhz * 24 = 48Mhz
+     72              break;
+     73            case PLL_50:
+     74          #if OSC_CIRCUIT_TPYE == CANNED_OSC_CIRCUIT
+     75              prdiv = 24u; //50Mhz/ 25 = 2Mhz
+     76          #elif OSC_CIRCUIT_TPYE == CRYSTAL_OSC_CIRCUIT
+     77              prdiv = 3u; //8Mhz/ 4 = 2Mhz
+     78          #endif
+     79              vdiv = 1u; // 2Mhz * 25 = 50Mhz
+     80              break;
+     81            case PLL_96:
+     82          #if OSC_CIRCUIT_TPYE == CANNED_OSC_CIRCUIT
+     83              prdiv = 24u; //50Mhz/ 25 = 2Mhz
+     84          #elif OSC_CIRCUIT_TPYE == CRYSTAL_OSC_CIRCUIT
+     85              prdiv = 3u; //8Mhz/ 4 = 2Mhz
+     86          #endif
+     87              vdiv = 24u; //2Mhz * 48 = 96Mhz
+     88              break;
+     89            case PLL_100:
+     90          #if OSC_CIRCUIT_TPYE == CANNED_OSC_CIRCUIT
+     91              prdiv = 24u; //50Mhz/ 25 = 2Mhz
+     92          #elif OSC_CIRCUIT_TPYE == CRYSTAL_OSC_CIRCUIT
+     93              prdiv = 3u; //8Mhz/ 4 = 2Mhz
+     94          #endif
+     95              vdiv = 26u; //2Mhz * 50 = 100Mhz
+     96              break;
+     97            case PLL_120:
+     98          #if OSC_CIRCUIT_TPYE == CANNED_OSC_CIRCUIT
+     99              prdiv = 19u; //50Mhz/ 20 = 2.5Mhz
+    100              vdiv = 24u;  //2.5Mhz * 48 = 120Mhz
+    101          #elif OSC_CIRCUIT_TPYE == CRYSTAL_OSC_CIRCUIT
+    102              prdiv = 1u; //8Mhz/ 2 = 4Mhz
+    103              vdiv  = 6u; //4Mhz * 30 = 120Mhz
+    104          #endif
+    105              break;
+    106            case PLL_150:
+    107          #if OSC_CIRCUIT_TPYE == CANNED_OSC_CIRCUIT
+    108              prdiv = 15u; //50Mhz/ 16 = 3.3Mhz
+    109              vdiv = 24u;  //3.3Mhz * 48 = 156.4Mhz
+    110          #elif OSC_CIRCUIT_TPYE == CRYSTAL_OSC_CIRCUIT
+    111              prdiv = 1u; //8Mhz/ 2 = 4Mhz
+    112              vdiv  = 13u; //4Mhz * 37 = 148Mhz
+    113          #endif
+    114              break;
+    115            case PLL_180:
+    116          #if OSC_CIRCUIT_TPYE == CANNED_OSC_CIRCUIT
+    117              prdiv = 14u; //50Mhz/ 15 = 3.3Mhz
+    118              vdiv = 30u;  //3.3Mhz * 54 = 178.2Mhz
+    119          #elif OSC_CIRCUIT_TPYE == CRYSTAL_OSC_CIRCUIT
+    120              prdiv = 1u;  //8Mhz/ 2 = 4Mhz
+    121              vdiv = 21u;  //4Mhz * 45 = 180Mhz
+    122          #endif
+    123              break;
+    124            case PLL_200:
+    125          #if OSC_CIRCUIT_TPYE == CANNED_OSC_CIRCUIT
+    126              prdiv = 12u; 
+    127              vdiv = 28u;
+    128          #elif OSC_CIRCUIT_TPYE == CRYSTAL_OSC_CIRCUIT
+    129              prdiv = 1u;  //8Mhz/ 2 = 4Mhz
+    130              vdiv = 26u;  //4Mhz * 50 = 200Mhz
+    131          #endif
+    132              break;
+    133            default:
+    134              return LPLD_PLL_Setup(PLL_96);
+    135            }
+    136          #elif defined(CPU_MK60F12) || defined(CPU_MK60F15)
+    137           /*
+    138           *************************************************
+    139            【LPLD注解】MCG关键系数
+    140            prdiv(PLL分频系数): 0~7(1~8)
+    141            vdiv(PLL倍频系数): 0~31(16~47)
+    142            PLL参考时钟范围: 8MHz~16MHz
+    143            PLL参考时钟 = 外部参考时钟(CANNED_OSC_CLK_HZ)/prdiv
+    144            PLL输出时钟范围: 90MHz~180MHz
+    145            PLL输出时钟 = PLL参考时钟 x vdiv（PLL倍频系数）/2
+    146            CoreClk = PLL输出时钟 /OUTDIV1
+    147           *************************************************
+    148          */
+    149            
+    150            // 对于MK60F12来说，core_clk_mhz建议不要超过120，这里限制为最高200
+    151            // 对于MK60F15来说，core_clk_mhz建议不要超过150，这里限制为最高200
+    152            core_clk_mhz = (PllOptionEnum_Type)(core_clk_mhz>200u?200u:core_clk_mhz);
+   \   00000006   0xFA5F 0xFB8B      UXTB     R11,R11          ;; ZeroExt  R11,R11,#+24,#+24
+   \   0000000A   0xF1BB 0x0FC9      CMP      R11,#+201
+   \   0000000E   0xD302             BCC.N    ??LPLD_PLL_Setup_0
+   \   00000010   0xF05F 0x0BC8      MOVS     R11,#+200
+   \   00000014   0xE7FF             B.N      ??LPLD_PLL_Setup_1
+    153            // 根据期望主频选择分频和倍频系数
+    154            switch(core_clk_mhz)
+   \                     ??LPLD_PLL_Setup_0: (+1)
+   \                     ??LPLD_PLL_Setup_1: (+1)
+   \   00000016   0xFA5F 0xFB8B      UXTB     R11,R11          ;; ZeroExt  R11,R11,#+24,#+24
+   \   0000001A   0x4658             MOV      R0,R11
+   \   0000001C   0x2864             CMP      R0,#+100
+   \   0000001E   0xD008             BEQ.N    ??LPLD_PLL_Setup_2
+   \   00000020   0x2878             CMP      R0,#+120
+   \   00000022   0xD00B             BEQ.N    ??LPLD_PLL_Setup_3
+   \   00000024   0x2896             CMP      R0,#+150
+   \   00000026   0xD00E             BEQ.N    ??LPLD_PLL_Setup_4
+   \   00000028   0x28B4             CMP      R0,#+180
+   \   0000002A   0xD011             BEQ.N    ??LPLD_PLL_Setup_5
+   \   0000002C   0x28C8             CMP      R0,#+200
+   \   0000002E   0xD014             BEQ.N    ??LPLD_PLL_Setup_6
+   \   00000030   0xE018             B.N      ??LPLD_PLL_Setup_7
+    155            {
+    156            case PLL_100:
+    157          #if OSC_CIRCUIT_TPYE == CANNED_OSC_CIRCUIT
+    158              prdiv = 4u; //50Mhz / 5 = 10Mhz
+   \                     ??LPLD_PLL_Setup_2: (+1)
+   \   00000032   0x2004             MOVS     R0,#+4
+   \   00000034   0x0005             MOVS     R5,R0
+    159              vdiv = 4u;  //10Mhz * 20 /2 = 100Mhz
+   \   00000036   0x2004             MOVS     R0,#+4
+   \   00000038   0x0006             MOVS     R6,R0
+    160          #elif OSC_CIRCUIT_TPYE == CRYSTAL_OSC_CIRCUIT
+    161              prdiv = 0u; //8Mhz / 1 = 8Mhz
+    162              vdiv = 9u;  //8Mhz * 25 /2 = 100Mhz
+    163          #endif
+    164              break;
+   \   0000003A   0xE017             B.N      ??LPLD_PLL_Setup_8
+    165            case PLL_120:
+    166          #if OSC_CIRCUIT_TPYE == CANNED_OSC_CIRCUIT
+    167              prdiv = 4u; //50Mhz / 5 = 10Mhz
+   \                     ??LPLD_PLL_Setup_3: (+1)
+   \   0000003C   0x2004             MOVS     R0,#+4
+   \   0000003E   0x0005             MOVS     R5,R0
+    168              vdiv = 8u;  //10Mhz * 24 /2 = 120Mhz
+   \   00000040   0x2008             MOVS     R0,#+8
+   \   00000042   0x0006             MOVS     R6,R0
+    169          #elif OSC_CIRCUIT_TPYE == CRYSTAL_OSC_CIRCUIT
+    170              prdiv = 0u; //8Mhz / 1 = 8Mhz
+    171              vdiv = 14u; //8Mhz * 30 /2 = 120Mhz
+    172          #endif
+    173              break;
+   \   00000044   0xE012             B.N      ??LPLD_PLL_Setup_8
+    174            case PLL_150:
+    175          #if OSC_CIRCUIT_TPYE == CANNED_OSC_CIRCUIT
+    176              prdiv = 4u; //50Mhz / 5 = 10Mhz
+   \                     ??LPLD_PLL_Setup_4: (+1)
+   \   00000046   0x2004             MOVS     R0,#+4
+   \   00000048   0x0005             MOVS     R5,R0
+    177              vdiv = 14u; //10Mhz * 30 /2 = 150Mhz
+   \   0000004A   0x200E             MOVS     R0,#+14
+   \   0000004C   0x0006             MOVS     R6,R0
+    178          #elif OSC_CIRCUIT_TPYE == CRYSTAL_OSC_CIRCUIT
+    179              prdiv = 0u; //8Mhz / 1 = 8Mhz
+    180              vdiv = 22u; //8Mhz * 38 /2 = 152Mhz
+    181          #endif
+    182              break;
+   \   0000004E   0xE00D             B.N      ??LPLD_PLL_Setup_8
+    183            case PLL_180:
+    184          #if OSC_CIRCUIT_TPYE == CANNED_OSC_CIRCUIT
+    185              prdiv = 4u; //50Mhz / 5 = 10Mhz
+   \                     ??LPLD_PLL_Setup_5: (+1)
+   \   00000050   0x2004             MOVS     R0,#+4
+   \   00000052   0x0005             MOVS     R5,R0
+    186              vdiv = 20u; //10Mhz * 36 /2 = 180Mhz
+   \   00000054   0x2014             MOVS     R0,#+20
+   \   00000056   0x0006             MOVS     R6,R0
+    187          #elif OSC_CIRCUIT_TPYE == CRYSTAL_OSC_CIRCUIT
+    188              prdiv = 0u; //8Mhz / 1 = 8Mhz
+    189              vdiv = 29u; //8Mhz * 45 /2 = 180Mhz    
+    190          #endif
+    191              break;
+   \   00000058   0xE008             B.N      ??LPLD_PLL_Setup_8
+    192            case PLL_200:
+    193          #if OSC_CIRCUIT_TPYE == CANNED_OSC_CIRCUIT
+    194              prdiv = 3u;  //50Mhz / 4 = 12.5Mhz
+   \                     ??LPLD_PLL_Setup_6: (+1)
+   \   0000005A   0x2003             MOVS     R0,#+3
+   \   0000005C   0x0005             MOVS     R5,R0
+    195              vdiv = 16u;  //12.5Mhz * 32 / 2 = 200
+   \   0000005E   0x2010             MOVS     R0,#+16
+   \   00000060   0x0006             MOVS     R6,R0
+    196          #endif
+    197              break;
+   \   00000062   0xE003             B.N      ??LPLD_PLL_Setup_8
+    198            default:
+    199              return LPLD_PLL_Setup(PLL_120);
+   \                     ??LPLD_PLL_Setup_7: (+1)
+   \   00000064   0x2078             MOVS     R0,#+120
+   \   00000066   0xF7FF 0xFFCB      BL       LPLD_PLL_Setup
+   \   0000006A   0xE0AE             B.N      ??LPLD_PLL_Setup_9
+    200            } 
+    201          #endif
+    202            
+    203            pll_freq = core_clk_mhz * 1;
+   \                     ??LPLD_PLL_Setup_8: (+1)
+   \   0000006C   0x465C             MOV      R4,R11
+    204            core_div = 0;
+   \   0000006E   0x2000             MOVS     R0,#+0
+   \   00000070   0x0007             MOVS     R7,R0
+    205            if((bus_div = (uint8)(core_clk_mhz/BUS_CLK_MHZ - 1u)) == (uint8)-1)
+   \   00000072   0xFA5F 0xFB8B      UXTB     R11,R11          ;; ZeroExt  R11,R11,#+24,#+24
+   \   00000076   0x203C             MOVS     R0,#+60
+   \   00000078   0xFBBB 0xF0F0      UDIV     R0,R11,R0
+   \   0000007C   0x1E40             SUBS     R0,R0,#+1
+   \   0000007E   0x4680             MOV      R8,R0
+   \   00000080   0xFA5F 0xF888      UXTB     R8,R8            ;; ZeroExt  R8,R8,#+24,#+24
+   \   00000084   0xF1B8 0x0FFF      CMP      R8,#+255
+   \   00000088   0xD102             BNE.N    ??LPLD_PLL_Setup_10
+    206            {
+    207              bus_div = 0;
+   \   0000008A   0x2000             MOVS     R0,#+0
+   \   0000008C   0x4680             MOV      R8,R0
+   \   0000008E   0xE00B             B.N      ??LPLD_PLL_Setup_11
+    208            }
+    209            else if(core_clk_mhz/(bus_div+1) > BUS_CLK_MHZ)
+   \                     ??LPLD_PLL_Setup_10: (+1)
+   \   00000090   0xFA5F 0xFB8B      UXTB     R11,R11          ;; ZeroExt  R11,R11,#+24,#+24
+   \   00000094   0xFA5F 0xF888      UXTB     R8,R8            ;; ZeroExt  R8,R8,#+24,#+24
+   \   00000098   0xF118 0x0001      ADDS     R0,R8,#+1
+   \   0000009C   0xFB9B 0xF0F0      SDIV     R0,R11,R0
+   \   000000A0   0x283D             CMP      R0,#+61
+   \   000000A2   0xD301             BCC.N    ??LPLD_PLL_Setup_11
+    210            {
+    211              bus_div += 1;
+   \   000000A4   0xF118 0x0801      ADDS     R8,R8,#+1
+    212            }
+    213            if((flexbus_div = (core_clk_mhz/FLEXBUS_CLK_MHZ - 1u)) == (uint8)-1)
+   \                     ??LPLD_PLL_Setup_11: (+1)
+   \   000000A8   0xFA5F 0xFB8B      UXTB     R11,R11          ;; ZeroExt  R11,R11,#+24,#+24
+   \   000000AC   0x2032             MOVS     R0,#+50
+   \   000000AE   0xFBBB 0xF0F0      UDIV     R0,R11,R0
+   \   000000B2   0x1E40             SUBS     R0,R0,#+1
+   \   000000B4   0x4681             MOV      R9,R0
+   \   000000B6   0xFA5F 0xF989      UXTB     R9,R9            ;; ZeroExt  R9,R9,#+24,#+24
+   \   000000BA   0xF1B9 0x0FFF      CMP      R9,#+255
+   \   000000BE   0xD102             BNE.N    ??LPLD_PLL_Setup_12
+    214            {
+    215              flexbus_div = 0;
+   \   000000C0   0x2000             MOVS     R0,#+0
+   \   000000C2   0x4681             MOV      R9,R0
+   \   000000C4   0xE00B             B.N      ??LPLD_PLL_Setup_13
+    216            }
+    217            else if(core_clk_mhz/(flexbus_div+1) > FLEXBUS_CLK_MHZ)
+   \                     ??LPLD_PLL_Setup_12: (+1)
+   \   000000C6   0xFA5F 0xFB8B      UXTB     R11,R11          ;; ZeroExt  R11,R11,#+24,#+24
+   \   000000CA   0xFA5F 0xF989      UXTB     R9,R9            ;; ZeroExt  R9,R9,#+24,#+24
+   \   000000CE   0xF119 0x0001      ADDS     R0,R9,#+1
+   \   000000D2   0xFB9B 0xF0F0      SDIV     R0,R11,R0
+   \   000000D6   0x2833             CMP      R0,#+51
+   \   000000D8   0xD301             BCC.N    ??LPLD_PLL_Setup_13
+    218            {
+    219              flexbus_div += 1;
+   \   000000DA   0xF119 0x0901      ADDS     R9,R9,#+1
+    220            }
+    221            if((flash_div = (core_clk_mhz/FLASH_CLK_MHZ - 1u)) == (uint8)-1)
+   \                     ??LPLD_PLL_Setup_13: (+1)
+   \   000000DE   0xFA5F 0xFB8B      UXTB     R11,R11          ;; ZeroExt  R11,R11,#+24,#+24
+   \   000000E2   0x2019             MOVS     R0,#+25
+   \   000000E4   0xFBBB 0xF0F0      UDIV     R0,R11,R0
+   \   000000E8   0x1E40             SUBS     R0,R0,#+1
+   \   000000EA   0x4682             MOV      R10,R0
+   \   000000EC   0xFA5F 0xFA8A      UXTB     R10,R10          ;; ZeroExt  R10,R10,#+24,#+24
+   \   000000F0   0xF1BA 0x0FFF      CMP      R10,#+255
+   \   000000F4   0xD102             BNE.N    ??LPLD_PLL_Setup_14
+    222            {
+    223              flash_div = 0;
+   \   000000F6   0x2000             MOVS     R0,#+0
+   \   000000F8   0x4682             MOV      R10,R0
+   \   000000FA   0xE00B             B.N      ??LPLD_PLL_Setup_15
+    224            }
+    225            else if(core_clk_mhz/(flash_div+1) > FLASH_CLK_MHZ)
+   \                     ??LPLD_PLL_Setup_14: (+1)
+   \   000000FC   0xFA5F 0xFB8B      UXTB     R11,R11          ;; ZeroExt  R11,R11,#+24,#+24
+   \   00000100   0xFA5F 0xFA8A      UXTB     R10,R10          ;; ZeroExt  R10,R10,#+24,#+24
+   \   00000104   0xF11A 0x0001      ADDS     R0,R10,#+1
+   \   00000108   0xFB9B 0xF0F0      SDIV     R0,R11,R0
+   \   0000010C   0x281A             CMP      R0,#+26
+   \   0000010E   0xD301             BCC.N    ??LPLD_PLL_Setup_15
+    226            {
+    227              flash_div += 1;
+   \   00000110   0xF11A 0x0A01      ADDS     R10,R10,#+1
+    228            }
+    229           
+    230          #if defined(CPU_MK60DZ10)
+    231            
+    232            #if OSC_CIRCUIT_TPYE == CANNED_OSC_CIRCUIT
+    233            // 这里假设复位后 MCG 模块默认为 FEI 模式
+    234            // 首先移动到 FBE 模式
+    235            MCG->C2 = 0;
+    236            // 振荡器初始化完成后,释放锁存状态下的 oscillator 和 GPIO 
+    237            SIM->SCGC4 |= SIM_SCGC4_LLWU_MASK;
+    238            LLWU->CS |= LLWU_CS_ACKISO_MASK;
+    239            // 选择外部 oscilator 、参考分频器 and 清零 IREFS 启动外部osc
+    240            // CLKS=2, FRDIV=3, IREFS=0, IRCLKEN=0, IREFSTEN=0
+    241            MCG->C1 = MCG_C1_CLKS(2) | MCG_C1_FRDIV(3);  
+    242            while (MCG->S & MCG_S_IREFST_MASK){}; // 等待参考时钟清零
+    243            while (((MCG->S & MCG_S_CLKST_MASK) >> MCG_S_CLKST_SHIFT) != 0x2){}; // 等待时钟状态显示为外部参考时钟(ext ref clk)
+    244            // 进入FBE模式
+    245            // 配置 PLL 参考分频器, PLLCLKEN=0, PLLSTEN=0, PRDIV=5
+    246            // 用晶振频率来选择 PRDIV 值. 仅在有频率晶振的时候支持
+    247            // 产生 2MHz 的参考时钟给 PLL.
+    248            MCG->C5 = MCG_C5_PRDIV(prdiv); // 设置 PLL 匹配晶振的参考分频数 
+    249            // 确保MCG_C6处于复位状态,禁止LOLIE、PLL、和时钟控制器,清PLL VCO分频器
+    250            MCG->C6 = 0x0;
+    251            //设置系统时钟分频系数
+    252            LPLD_Set_SYS_DIV(core_div, bus_div, flexbus_div, flash_div);  
+    253            //设置倍频系数
+    254            MCG->C6 = MCG_C6_PLLS_MASK | MCG_C6_VDIV(vdiv); 
+    255            while (!(MCG->S & MCG_S_PLLST_MASK)){}; // wait for PLL status bit to set
+    256            while (!(MCG->S & MCG_S_LOCK_MASK)){}; // Wait for LOCK bit to set
+    257            // 已经进入PBE模式
+    258            // 清零CLKS 进入PEE模式
+    259            MCG->C1 &= ~MCG_C1_CLKS_MASK;
+    260            // Wait for clock status bits to update
+    261            while (((MCG->S & MCG_S_CLKST_MASK) >> MCG_S_CLKST_SHIFT) != 0x3){};
+    262            // 已经进入PEE模式
+    263            
+    264            #elif OSC_CIRCUIT_TPYE == CRYSTAL_OSC_CIRCUIT
+    265            // 这里假设复位后 MCG 模块默认为 FEI 模式
+    266            // 首先移动到 FBE 模式
+    267            MCG->C2 = MCG_C2_RANGE(0x01) | MCG_C2_HGO_MASK | MCG_C2_EREFS_MASK;
+    268            // 振荡器初始化完成后,释放锁存状态下的 oscillator 和 GPIO 
+    269            SIM->SCGC4 |= SIM_SCGC4_LLWU_MASK;
+    270            LLWU->CS |= LLWU_CS_ACKISO_MASK;
+    271            MCG->C1 = MCG_C1_CLKS(2) | MCG_C1_FRDIV(3);
+    272            while (!(MCG->S & MCG_S_OSCINIT_MASK)) {}; //等待C2[EREFS]初始化
+    273            while (MCG->S & MCG_S_IREFST_MASK){}; // 等待参考时钟清零
+    274            while (((MCG->S & MCG_S_CLKST_MASK) >> MCG_S_CLKST_SHIFT) != 0x2){}; // 等待时钟状态显示为外部参考时钟(ext ref clk)
+    275            // 进入FBE模式
+    276            // 配置 PLL 参考分频器, PLLCLKEN=0, PLLSTEN=0, PRDIV=5
+    277            // 用晶振频率来选择 PRDIV 值. 仅在有频率晶振的时候支持
+    278            // 产生 2MHz 的参考时钟给 PLL.
+    279            MCG->C5 = MCG_C5_PRDIV(prdiv); // 设置 PLL 匹配晶振的参考分频数 
+    280            // 确保MCG_C6处于复位状态,禁止LOLIE、PLL、和时钟控制器,清PLL VCO分频器
+    281            MCG->C6 = 0x0;
+    282            //设置系统时钟分频系数
+    283            LPLD_Set_SYS_DIV(core_div, bus_div, flexbus_div, flash_div);  
+    284            //设置倍频系数
+    285            MCG->C6 = MCG_C6_PLLS_MASK | MCG_C6_VDIV(vdiv); 
+    286            while (!(MCG->S & MCG_S_PLLST_MASK)){}; // wait for PLL status bit to set
+    287            while (!(MCG->S & MCG_S_LOCK_MASK)){}; // Wait for LOCK bit to set
+    288            // 已经进入PBE模式
+    289            // 清零CLKS 进入PEE模式
+    290            MCG->C1 &= ~MCG_C1_CLKS_MASK;
+    291            // Wait for clock status bits to update
+    292            while (((MCG->S & MCG_S_CLKST_MASK) >> MCG_S_CLKST_SHIFT) != 0x3){};
+    293            #endif
+    294            
+    295          #elif (defined(CPU_MK60D10)) 
+    296            
+    297            #if OSC_CIRCUIT_TPYE == CANNED_OSC_CIRCUIT
+    298            // 这里假设复位后 MCG 模块默认为 FEI 模式
+    299            // 首先移动到 FBE 模式
+    300            MCG->C2 = 0;
+    301            // 选择外部 oscilator 、参考分频器 and 清零 IREFS 启动外部osc
+    302            // CLKS=2, FRDIV=3, IREFS=0, IRCLKEN=0, IREFSTEN=0
+    303            MCG->C1 = MCG_C1_CLKS(2) | MCG_C1_FRDIV(3);  
+    304            while (MCG->S & MCG_S_IREFST_MASK){}; // 等待参考时钟清零
+    305            while (((MCG->S & MCG_S_CLKST_MASK) >> MCG_S_CLKST_SHIFT) != 0x2){}; // 等待时钟状态显示为外部参考时钟(ext ref clk)
+    306            // 进入FBE模式
+    307            // 配置 PLL 参考分频器, PLLCLKEN=0, PLLSTEN=0, PRDIV=5
+    308            // 用晶振频率来选择 PRDIV 值. 仅在有频率晶振的时候支持
+    309            // 产生 2MHz 的参考时钟给 PLL.
+    310            MCG->C5 = MCG_C5_PRDIV0(prdiv); // 设置 PLL 匹配晶振的参考分频数 
+    311            // 确保MCG_C6处于复位状态,禁止LOLIE、PLL、和时钟控制器,清PLL VCO分频器
+    312            MCG->C6 = 0x0;
+    313            //设置系统时钟分频系数
+    314            LPLD_Set_SYS_DIV(core_div, bus_div, flexbus_div, flash_div);  
+    315            //设置倍频系数
+    316            MCG->C6 = MCG_C6_PLLS_MASK | MCG_C6_VDIV0(vdiv); 
+    317            while (!(MCG->S & MCG_S_PLLST_MASK)){}; // wait for PLL status bit to set
+    318            while (!(MCG->S & MCG_S_LOCK0_MASK)){}; // Wait for LOCK bit to set
+    319            // 已经进入PBE模式
+    320            // 清零CLKS 进入PEE模式
+    321            MCG->C1 &= ~MCG_C1_CLKS_MASK;
+    322            // Wait for clock status bits to update
+    323            while (((MCG->S & MCG_S_CLKST_MASK) >> MCG_S_CLKST_SHIFT) != 0x3){};
+    324            // 已经进入PEE模式
+    325            
+    326            #elif OSC_CIRCUIT_TPYE == CRYSTAL_OSC_CIRCUIT
+    327            
+    328            // 这里假设复位后 MCG 模块默认为 FEI 模式
+    329            // 首先移动到 FBE 模式
+    330            MCG->C2 = MCG_C2_RANGE0(0x01) | MCG_C2_HGO0_MASK | MCG_C2_EREFS0_MASK;
+    331          
+    332            MCG->C1 = MCG_C1_CLKS(2) | MCG_C1_FRDIV(3);
+    333            while (!(MCG->S & MCG_S_OSCINIT0_MASK)) {}; //等待C2[EREFS]初始化
+    334            while (MCG->S & MCG_S_IREFST_MASK){}; // 等待参考时钟清零
+    335            while (((MCG->S & MCG_S_CLKST_MASK) >> MCG_S_CLKST_SHIFT) != 0x2){}; // 等待时钟状态显示为外部参考时钟(ext ref clk)
+    336            // 进入FBE模式
+    337            // 配置 PLL 参考分频器, PLLCLKEN=0, PLLSTEN=0, PRDIV=5
+    338            // 用晶振频率来选择 PRDIV 值. 仅在有频率晶振的时候支持
+    339            // 产生 2MHz 的参考时钟给 PLL.
+    340            MCG->C5 = MCG_C5_PRDIV0(prdiv); // 设置 PLL 匹配晶振的参考分频数 
+    341            // 确保MCG_C6处于复位状态,禁止LOLIE、PLL、和时钟控制器,清PLL VCO分频器
+    342            MCG->C6 = 0x0;
+    343            //设置系统时钟分频系数
+    344            LPLD_Set_SYS_DIV(core_div, bus_div, flexbus_div, flash_div);  
+    345            //设置倍频系数
+    346            MCG->C6 = MCG_C6_PLLS_MASK | MCG_C6_VDIV0(vdiv); 
+    347            while (!(MCG->S & MCG_S_PLLST_MASK)){}; // wait for PLL status bit to set
+    348            while (!(MCG->S & MCG_S_LOCK0_MASK)){}; // Wait for LOCK bit to set
+    349            // 已经进入PBE模式
+    350            // 清零CLKS 进入PEE模式
+    351            MCG->C1 &= ~MCG_C1_CLKS_MASK;
+    352            // Wait for clock status bits to update
+    353            while (((MCG->S & MCG_S_CLKST_MASK) >> MCG_S_CLKST_SHIFT) != 0x3){};
+    354            
+    355            #endif
+    356            
+    357          #elif defined(CPU_MK60F12) || defined(CPU_MK60F15)
+    358            
+    359            if (PMC->REGSC &  PMC_REGSC_ACKISO_MASK)
+   \                     ??LPLD_PLL_Setup_15: (+1)
+   \   00000114   0x482E             LDR.N    R0,??LPLD_PLL_Setup_16  ;; 0x4007d002
+   \   00000116   0x7800             LDRB     R0,[R0, #+0]
+   \   00000118   0x0700             LSLS     R0,R0,#+28
+   \   0000011A   0xD505             BPL.N    ??LPLD_PLL_Setup_17
+    360                  PMC->REGSC |= PMC_REGSC_ACKISO_MASK;
+   \   0000011C   0x482C             LDR.N    R0,??LPLD_PLL_Setup_16  ;; 0x4007d002
+   \   0000011E   0x7800             LDRB     R0,[R0, #+0]
+   \   00000120   0xF050 0x0008      ORRS     R0,R0,#0x8
+   \   00000124   0x492A             LDR.N    R1,??LPLD_PLL_Setup_16  ;; 0x4007d002
+   \   00000126   0x7008             STRB     R0,[R1, #+0]
+    361            /*注意：PLL初始化不会配置系统时钟分频，
+    362              所以系统时钟分频必须在PLL之前调用*/ 
+    363            SIM->CLKDIV1 = ( 0
+    364                            | SIM_CLKDIV1_OUTDIV1(core_div)   //设置内核分频
+    365                            | SIM_CLKDIV1_OUTDIV2(bus_div)   //设置外设分频
+    366                            | SIM_CLKDIV1_OUTDIV3(flexbus_div)   //设置FlexBus分频
+    367                            | SIM_CLKDIV1_OUTDIV4(flash_div) );//设置FLASH分频
+   \                     ??LPLD_PLL_Setup_17: (+1)
+   \   00000128   0xB2FF             UXTB     R7,R7            ;; ZeroExt  R7,R7,#+24,#+24
+   \   0000012A   0xFA5F 0xF888      UXTB     R8,R8            ;; ZeroExt  R8,R8,#+24,#+24
+   \   0000012E   0xEA5F 0x6008      LSLS     R0,R8,#+24
+   \   00000132   0xF010 0x6070      ANDS     R0,R0,#0xF000000
+   \   00000136   0xEA50 0x7007      ORRS     R0,R0,R7, LSL #+28
+   \   0000013A   0xFA5F 0xF989      UXTB     R9,R9            ;; ZeroExt  R9,R9,#+24,#+24
+   \   0000013E   0xEA5F 0x5109      LSLS     R1,R9,#+20
+   \   00000142   0xF411 0x0170      ANDS     R1,R1,#0xF00000
+   \   00000146   0x4308             ORRS     R0,R1,R0
+   \   00000148   0xFA5F 0xFA8A      UXTB     R10,R10          ;; ZeroExt  R10,R10,#+24,#+24
+   \   0000014C   0xEA5F 0x410A      LSLS     R1,R10,#+16
+   \   00000150   0xF411 0x2170      ANDS     R1,R1,#0xF0000
+   \   00000154   0x4308             ORRS     R0,R1,R0
+   \   00000156   0x491F             LDR.N    R1,??LPLD_PLL_Setup_16+0x4  ;; 0x40048044
+   \   00000158   0x6008             STR      R0,[R1, #+0]
+    368            //初始化各部分时钟：系统内核主频、总线时钟、FlexBus时钟、Flash时钟
+    369            
+    370            #if OSC_CIRCUIT_TPYE == CANNED_OSC_CIRCUIT
+    371            // 这里假设复位后 MCG 模块默认为 FEI 模式
+    372            // 首先移动到 FBE 模式
+    373            MCG->C2 = MCG_C2_RANGE0(1);
+   \   0000015A   0x2010             MOVS     R0,#+16
+   \   0000015C   0x491E             LDR.N    R1,??LPLD_PLL_Setup_16+0x8  ;; 0x40064001
+   \   0000015E   0x7008             STRB     R0,[R1, #+0]
+    374            // 选择外部 oscilator 、参考分频器 and 清零 IREFS 启动外部osc
+    375            // CLKS=2, FRDIV=5, IREFS=0, IRCLKEN=0, IREFSTEN=0
+    376            MCG->C1 = MCG_C1_CLKS(2) | MCG_C1_FRDIV(5);
+   \   00000160   0x20A8             MOVS     R0,#+168
+   \   00000162   0x491E             LDR.N    R1,??LPLD_PLL_Setup_16+0xC  ;; 0x40064000
+   \   00000164   0x7008             STRB     R0,[R1, #+0]
+    377            while (MCG->S & MCG_S_IREFST_MASK){}; // 等待参考时钟清零
+   \                     ??LPLD_PLL_Setup_18: (+1)
+   \   00000166   0x481E             LDR.N    R0,??LPLD_PLL_Setup_16+0x10  ;; 0x40064006
+   \   00000168   0x7800             LDRB     R0,[R0, #+0]
+   \   0000016A   0x06C0             LSLS     R0,R0,#+27
+   \   0000016C   0xD4FB             BMI.N    ??LPLD_PLL_Setup_18
+    378            while (((MCG->S & MCG_S_CLKST_MASK) >> MCG_S_CLKST_SHIFT) != 0x2){}; // 等待时钟状态显示为外部参考时钟(ext ref clk)
+   \                     ??LPLD_PLL_Setup_19: (+1)
+   \   0000016E   0x481C             LDR.N    R0,??LPLD_PLL_Setup_16+0x10  ;; 0x40064006
+   \   00000170   0x7800             LDRB     R0,[R0, #+0]
+   \   00000172   0xF3C0 0x0081      UBFX     R0,R0,#+2,#+2
+   \   00000176   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000178   0x2802             CMP      R0,#+2
+   \   0000017A   0xD1F8             BNE.N    ??LPLD_PLL_Setup_19
+    379            // 进入FBE模式
+    380            // 配置 PLL 参考分频器, PLLCLKEN=0, PLLSTEN=0, PRDIV
+    381            // 用晶振频率来选择 PRDIV 值. 仅在有频率晶振的时候支持
+    382            // 产生 10MHz 的参考时钟给 PLL.
+    383            MCG->C6 |= MCG_C6_CME0_MASK;
+   \   0000017C   0x4819             LDR.N    R0,??LPLD_PLL_Setup_16+0x14  ;; 0x40064005
+   \   0000017E   0x7800             LDRB     R0,[R0, #+0]
+   \   00000180   0xF050 0x0020      ORRS     R0,R0,#0x20
+   \   00000184   0x4917             LDR.N    R1,??LPLD_PLL_Setup_16+0x14  ;; 0x40064005
+   \   00000186   0x7008             STRB     R0,[R1, #+0]
+    384            MCG->C5 = MCG_C5_PRDIV0(prdiv); // 设置 PLL 匹配晶振的参考分频数
+   \   00000188   0xF015 0x0007      ANDS     R0,R5,#0x7
+   \   0000018C   0x4916             LDR.N    R1,??LPLD_PLL_Setup_16+0x18  ;; 0x40064004
+   \   0000018E   0x7008             STRB     R0,[R1, #+0]
+    385            MCG->C6 = MCG_C6_PLLS_MASK | MCG_C6_VDIV0(vdiv); 
+   \   00000190   0xF016 0x001F      ANDS     R0,R6,#0x1F
+   \   00000194   0xF050 0x0040      ORRS     R0,R0,#0x40
+   \   00000198   0x4912             LDR.N    R1,??LPLD_PLL_Setup_16+0x14  ;; 0x40064005
+   \   0000019A   0x7008             STRB     R0,[R1, #+0]
+    386            while (!(MCG->S & MCG_S_PLLST_MASK)){}; // wait for PLL status bit to set
+   \                     ??LPLD_PLL_Setup_20: (+1)
+   \   0000019C   0x4810             LDR.N    R0,??LPLD_PLL_Setup_16+0x10  ;; 0x40064006
+   \   0000019E   0x7800             LDRB     R0,[R0, #+0]
+   \   000001A0   0x0680             LSLS     R0,R0,#+26
+   \   000001A2   0xD5FB             BPL.N    ??LPLD_PLL_Setup_20
+    387            while (!(MCG->S & MCG_S_LOCK0_MASK)){}; // Wait for LOCK bit to set
+   \                     ??LPLD_PLL_Setup_21: (+1)
+   \   000001A4   0x480E             LDR.N    R0,??LPLD_PLL_Setup_16+0x10  ;; 0x40064006
+   \   000001A6   0x7800             LDRB     R0,[R0, #+0]
+   \   000001A8   0x0640             LSLS     R0,R0,#+25
+   \   000001AA   0xD5FB             BPL.N    ??LPLD_PLL_Setup_21
+    388            // 已经进入PBE模式
+    389            // 清零CLKS 进入PEE模式
+    390            MCG->C1 &= ~MCG_C1_CLKS_MASK;
+   \   000001AC   0x480B             LDR.N    R0,??LPLD_PLL_Setup_16+0xC  ;; 0x40064000
+   \   000001AE   0x7800             LDRB     R0,[R0, #+0]
+   \   000001B0   0xF010 0x003F      ANDS     R0,R0,#0x3F
+   \   000001B4   0x4909             LDR.N    R1,??LPLD_PLL_Setup_16+0xC  ;; 0x40064000
+   \   000001B6   0x7008             STRB     R0,[R1, #+0]
+    391            // Wait for clock status bits to update
+    392            while (((MCG->S & MCG_S_CLKST_MASK) >> MCG_S_CLKST_SHIFT) != 0x3){};
+   \                     ??LPLD_PLL_Setup_22: (+1)
+   \   000001B8   0x4809             LDR.N    R0,??LPLD_PLL_Setup_16+0x10  ;; 0x40064006
+   \   000001BA   0x7800             LDRB     R0,[R0, #+0]
+   \   000001BC   0xF3C0 0x0081      UBFX     R0,R0,#+2,#+2
+   \   000001C0   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   000001C2   0x2803             CMP      R0,#+3
+   \   000001C4   0xD1F8             BNE.N    ??LPLD_PLL_Setup_22
+    393            // 已经进入PEE模式
+    394            #elif OSC_CIRCUIT_TPYE == CRYSTAL_OSC_CIRCUIT
+    395            // 这里假设复位后 MCG 模块默认为 FEI 模式
+    396            // 首先移动到 FBE 模式
+    397            MCG->C2 = MCG_C2_RANGE0(1) | MCG_C2_HGO0_MASK | MCG_C2_EREFS0_MASK;
+    398            // 选择外部 oscilator 、参考分频器 and 清零 IREFS 启动外部osc
+    399            // CLKS=2, FRDIV=3, IREFS=0, IRCLKEN=0, IREFSTEN=0
+    400            MCG->C1 = MCG_C1_CLKS(2) | MCG_C1_FRDIV(3);
+    401            while (!(MCG->S & MCG_S_OSCINIT0_MASK)) {}; //等待C2[EREFS]初始化
+    402            while (MCG->S & MCG_S_IREFST_MASK){}; // 等待参考时钟清零
+    403            while (((MCG->S & MCG_S_CLKST_MASK) >> MCG_S_CLKST_SHIFT) != 0x2){}; // 等待时钟状态显示为外部参考时钟(ext ref clk)
+    404            // 进入FBE模式
+    405            // 配置 PLL 参考分频器, PLLCLKEN=0, PLLSTEN=0, PRDIV
+    406            // 用晶振频率来选择 PRDIV 值. 仅在有频率晶振的时候支持
+    407            // 产生 10MHz 的参考时钟给 PLL.
+    408            MCG->C6 |= MCG_C6_CME0_MASK;
+    409            MCG->C5 = MCG_C5_PRDIV0(prdiv); // 设置 PLL 匹配晶振的参考分频数
+    410            MCG->C6 = MCG_C6_PLLS_MASK | MCG_C6_VDIV0(vdiv); 
+    411            while (!(MCG->S & MCG_S_PLLST_MASK)){}; // wait for PLL status bit to set
+    412            while (!(MCG->S & MCG_S_LOCK0_MASK)){}; // Wait for LOCK bit to set
+    413            // 已经进入PBE模式
+    414            // 清零CLKS 进入PEE模式
+    415            MCG->C1 &= ~MCG_C1_CLKS_MASK;
+    416            // Wait for clock status bits to update
+    417            while (((MCG->S & MCG_S_CLKST_MASK) >> MCG_S_CLKST_SHIFT) != 0x3){};
+    418            // 已经进入PEE模式
+    419            #endif
+    420          #endif  
+    421            return pll_freq;
+   \   000001C6   0x0020             MOVS     R0,R4
+   \   000001C8   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \                     ??LPLD_PLL_Setup_9: (+1)
+   \   000001CA   0xE8BD 0x8FF2      POP      {R1,R4-R11,PC}   ;; return
+   \   000001CE   0xBF00             Nop      
+   \                     ??LPLD_PLL_Setup_16:
+   \   000001D0   0x4007D002         DC32     0x4007d002
+   \   000001D4   0x40048044         DC32     0x40048044
+   \   000001D8   0x40064001         DC32     0x40064001
+   \   000001DC   0x40064000         DC32     0x40064000
+   \   000001E0   0x40064006         DC32     0x40064006
+   \   000001E4   0x40064005         DC32     0x40064005
+   \   000001E8   0x40064004         DC32     0x40064004
+    422          } 
+    423          
+    424          /*
+    425           * LPLD_Set_SYS_DIV
+    426           * 设置系统始终分频
+    427           *
+    428           * 说明:
+    429           * 这段代码必须放置在RAM中，目的是防止程序跑飞，详见官方文档errata e2448.
+    430           * 当Flash时钟分频改变的时候，Flash预读取必须禁用.
+    431           * 禁止从Flash中运行以下代码.
+    432           * 在预读取被重新使能之前必须在时钟分频改变后有一段小的延时.
+    433           *
+    434           * 参数:
+    435           *    outdiv1~outdiv4--分别为core, bus, FlexBus, Flash时钟分频系数
+    436           */
+
+   \                                 In section .textrw, align 4, keep-with-next
+    437          RAMFUNC void LPLD_Set_SYS_DIV(uint32 outdiv1, uint32 outdiv2, uint32 outdiv3, uint32 outdiv4)
+    438          {
+   \                     LPLD_Set_SYS_DIV: (+1)
+   \   00000000   0xB4F0             PUSH     {R4-R7}
+    439            uint32 temp_reg;
+    440            uint8 i;
+    441            
+    442            temp_reg = FMC->PFAPR; // 备份 FMC_PFAPR 寄存器
+   \   00000002   0x4E11             LDR.N    R6,??LPLD_Set_SYS_DIV_0  ;; 0x4001f000
+   \   00000004   0x6836             LDR      R6,[R6, #+0]
+   \   00000006   0x0034             MOVS     R4,R6
+    443            
+    444            // 设置 M0PFD 到 M7PFD 为 1 禁用预先读取
+    445            FMC->PFAPR |= FMC_PFAPR_M7PFD_MASK | FMC_PFAPR_M6PFD_MASK | FMC_PFAPR_M5PFD_MASK
+    446                       | FMC_PFAPR_M4PFD_MASK | FMC_PFAPR_M3PFD_MASK | FMC_PFAPR_M2PFD_MASK
+    447                       | FMC_PFAPR_M1PFD_MASK | FMC_PFAPR_M0PFD_MASK;
+   \   00000008   0x4E0F             LDR.N    R6,??LPLD_Set_SYS_DIV_0  ;; 0x4001f000
+   \   0000000A   0x6836             LDR      R6,[R6, #+0]
+   \   0000000C   0xF456 0x067F      ORRS     R6,R6,#0xFF0000
+   \   00000010   0x4F0D             LDR.N    R7,??LPLD_Set_SYS_DIV_0  ;; 0x4001f000
+   \   00000012   0x603E             STR      R6,[R7, #+0]
+    448            
+    449            // 设置时钟分频为期望值  
+    450            SIM->CLKDIV1 = SIM_CLKDIV1_OUTDIV1(outdiv1) | SIM_CLKDIV1_OUTDIV2(outdiv2) 
+    451                        | SIM_CLKDIV1_OUTDIV3(outdiv3) | SIM_CLKDIV1_OUTDIV4(outdiv4);
+   \   00000014   0x060E             LSLS     R6,R1,#+24
+   \   00000016   0xF016 0x6670      ANDS     R6,R6,#0xF000000
+   \   0000001A   0xEA56 0x7600      ORRS     R6,R6,R0, LSL #+28
+   \   0000001E   0x0517             LSLS     R7,R2,#+20
+   \   00000020   0xF417 0x0770      ANDS     R7,R7,#0xF00000
+   \   00000024   0x433E             ORRS     R6,R7,R6
+   \   00000026   0x041F             LSLS     R7,R3,#+16
+   \   00000028   0xF417 0x2770      ANDS     R7,R7,#0xF0000
+   \   0000002C   0x433E             ORRS     R6,R7,R6
+   \   0000002E   0x4F07             LDR.N    R7,??LPLD_Set_SYS_DIV_0+0x4  ;; 0x40048044
+   \   00000030   0x603E             STR      R6,[R7, #+0]
+    452          
+    453            // 延时一小段时间等待改变
+    454            for (i = 0 ; i < outdiv4 ; i++)
+   \   00000032   0x2600             MOVS     R6,#+0
+   \   00000034   0x0035             MOVS     R5,R6
+   \                     ??LPLD_Set_SYS_DIV_1: (+1)
+   \   00000036   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   00000038   0x429D             CMP      R5,R3
+   \   0000003A   0xD201             BCS.N    ??LPLD_Set_SYS_DIV_2
+   \   0000003C   0x1C6D             ADDS     R5,R5,#+1
+   \   0000003E   0xE7FA             B.N      ??LPLD_Set_SYS_DIV_1
+    455            {}
+    456            
+    457            FMC->PFAPR = temp_reg; // 回复原先的 FMC_PFAPR 寄存器值
+   \                     ??LPLD_Set_SYS_DIV_2: (+1)
+   \   00000040   0x4E01             LDR.N    R6,??LPLD_Set_SYS_DIV_0  ;; 0x4001f000
+   \   00000042   0x6034             STR      R4,[R6, #+0]
+    458            
+    459            return;
+   \   00000044   0xBCF0             POP      {R4-R7}
+   \   00000046   0x4770             BX       LR               ;; return
+   \                     ??LPLD_Set_SYS_DIV_0:
+   \   00000048   0x4001F000         DC32     0x4001f000
+   \   0000004C   0x40048044         DC32     0x40048044
+    460          } // set_sys_dividers
+    461          
+    462          /*******************************************
+    463          *         MK60F12 & 15
+    464          *  MCGOUT = PLL output frequency/2
+    465          *  PLL = (Crystal / PRDIV0 ) * VDIV0
+    466          ********************************************
+    467          PRDIV0 Divide Factor
+    468          ********************************************
+    469          PRDIV0  Va
+    470          ********************************************
+    471          000     1
+    472          001     2
+    473          010     3
+    474          011     4
+    475          100     5
+    476          101     6
+    477          110     7
+    478          111     8
+    479          ********************************************
+    480          VDIV0 MultiplyFactor
+    481          ********************************************
+    482          VDIV0 Va VDIV0 Va VDIV0 Va VDIV0 Va
+    483          ********************************************
+    484          00000 16 01000 24 10000 32 11000 40
+    485          00001 17 01001 25 10001 33 11001 41
+    486          00010 18 01010 26 10010 34 11010 42
+    487          00011 19 01011 27 10011 35 11011 43
+    488          00100 20 01100 28 10100 36 11100 44
+    489          00101 21 01101 29 10101 37 11101 45
+    490          00110 22 01110 30 10110 38 11110 46
+    491          00111 23 01111 31 10111 39 11111 47
+    492          ********************************************/
+    493          
+    494          /********************************************
+    495          *             MK60DZ10
+    496          *  MCGOUT = PLL output frequency
+    497          *  PLL = (Crystal / PRDIV0 ) * VDIV0
+    498          *********************************************
+    499          PRDIV DivideFactor
+    500          *********************************************
+    501          PRDIV0 Va PRDIV0 Va PRDIV0 Va PRDIV0 Va
+    502          *********************************************
+    503          00000  1  01000   9 10000  17 11000  25
+    504          00001  2  01001  10 10001  18 11001  Reserved
+    505          00010  3  01010  11 10010  19 11010  Reserved
+    506          00011  4  01011  12 10011  20 11011  Reserved
+    507          00100  5  01100  13 10100  21 11100  Reserved
+    508          00101  6  01101  14 10101  22 11101  Reserved
+    509          00110  7  01110  15 10110  23 11110  Reserved
+    510          00111  8  01111  16 10111  24 11111  Reserved
+    511          *********************************************
+    512          VDIV MultiplyFactor
+    513          *********************************************
+    514          VDIV0 Va VDIV0 Va VDIV0 Va VDIV0 Va
+    515          *********************************************
+    516          00000 24 01000 32 10000 40 11000 48
+    517          00001 25 01001 33 10001 41 11001 49
+    518          00010 26 01010 34 10010 42 11010 50
+    519          00011 27 01011 35 10011 43 11011 51
+    520          00100 28 01100 36 10100 44 11100 52
+    521          00101 29 01101 37 10101 45 11101 53
+    522          00110 30 01110 38 10110 46 11110 54
+    523          00111 31 01111 39 10111 47 11111 55
+    524          *********************************************/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      40   LPLD_PLL_Setup
+        40   -> LPLD_PLL_Setup
+      16   LPLD_Set_SYS_DIV
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+     492  LPLD_PLL_Setup
+      80  LPLD_Set_SYS_DIV
+       4  g_bus_clock
+       4  g_core_clock
+       4  g_flash_clock
+       4  g_flexbus_clock
+
+ 
+  16 bytes in section .data
+ 492 bytes in section .text
+  80 bytes in section .textrw
+ 
+ 572 bytes of CODE memory
+  16 bytes of DATA memory
+
+Errors: none
+Warnings: none
